@@ -1,14 +1,40 @@
-# AAE-Detection
+# African American BIAS IN HATE SPEECH DRTECTION
 
-Investigating Bias in Hate Speech Detection
-This project investigates potential biases in hate speech detection systems towards African American English (AAE) and develops methods to mitigate such biases.
 
-The main components of the project are:
+# Reducing Algorithmic Bias in Social Media
 
-Training classification models on Twitter datasets to categorize text as hate speech, offensive language, or neutral
-Building an AAE detection model to identify text originating from African American users
-Using word embeddings to replace potentially offensive terms with less inflammatory synonyms
-Analyzing if debiasing techniques reduce misclassification of AAE text as hate speech
+This project aims to reduce algorithmic bias in social media by replacing potentially offensive words with more neutral ones. 
+
+## Data Collection
+
+- Collected 100k tweets labeled as hate speech, abusive, normal, or spam 
+- Fetched tweet text using Twitter API based on tweet IDs
+- Performed exploratory analysis like emoji, stopword, and punctuation usage
+
+## Model 1: Hate Speech Detection
+
+- Preprocessed tweets with custom tokenization, normalization, and TF-IDF vectors
+- Trained SVM model to classify tweets as hateful, abusive, normal, or spam
+- Achieved 80% accuracy on test set
+
+## Model 2: African American English Detection 
+
+- Collected 100k tweets labeled as African American English (AAE) or not
+- Trained Multinomial Naive Bayes model to detect AAE tweets
+- Achieved 86% accuracy on test set
+
+## Bias Mitigation
+
+- Trained Word2Vec model on AAE tweets 
+- Created replacement dictionary mapping offensive to neutral words
+- Ran pipeline on 100k unseen tweets, replacing offensive words in AAE tweets
+- 
+
+## Results
+
+- Converted over 26k previously hateful/abusive tweets to normal in 100k tweets
+- Visualized class distribution changes showing conversion of many hateful and abusive tweets to normal after word replacement
+
 
 
 <img width="770" alt="Screenshot 2023-07-20 at 6 13 10 PM" src="https://github.com/ashwindeshpande19/AAE-Detection/assets/73527299/fe8ef462-df2c-4e1b-a566-de08897d8607">
