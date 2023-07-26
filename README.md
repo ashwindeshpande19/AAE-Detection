@@ -28,7 +28,6 @@ This project aims to reduce algorithmic bias in social media by replacing potent
 - Trained Word2Vec model on AAE tweets 
 - Created replacement dictionary mapping offensive to neutral words
 - Ran pipeline on 100k unseen tweets, replacing offensive words in AAE tweets
-- 
 
 ## Results
 
