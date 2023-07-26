@@ -37,4 +37,3 @@ This project aims to reduce algorithmic bias in social media by replacing potent
 
 
 
-<img width="770" alt="Screenshot 2023-07-20 at 6 13 10 PM" src="https://github.com/ashwindeshpande19/AAE-Detection/assets/73527299/fe8ef462-df2c-4e1b-a566-de08897d8607">
